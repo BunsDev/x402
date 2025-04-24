@@ -171,7 +171,7 @@ export function configurePaymentMiddleware(globalConfig: GlobalConfig) {
             x402Version,
             error: response.invalidReason,
             accepts: toJsonSafe(paymentRequirements),
-            payerAddress: response.payerAddress,
+            payer: response.payer,
           },
           402,
         );
